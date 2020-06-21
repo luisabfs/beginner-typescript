@@ -1,14 +1,17 @@
 # Introdução
+<p align="center">
+  <img src="https://miro.medium.com/max/600/1*wbQ_-M2VBcP7VRvV7igNbA.png">
+</p>
 
 ### O que é?
 
-Uma linguagem, totalmente baseada em Javascript, que adiciona tipagem.
+Um superconjunto de Javascript, desenvolvido pela Microsoft, que adiciona tipagem e alguns outros recursos à linguagem.
 
-### Por quê?
+### Por quê usar?
 
-Variáveis com tipos dinâmicos no Javascript nos deixam com dúvidas quanto ao **formato dos dados** que nós queremos manipular. Desse modo, se nós, desenvolvedores, não sabemos qual o formato desses dados, o nosso editor de código também não sabe - o que prejudica o *IntelliSense*.
+Variáveis com tipos dinâmicos no Javascript nos deixam com dúvidas quanto ao **formato dos dados** que nós queremos manipular. Desse modo, se nós desenvolvedores não sabemos qual o formato desses dados, o nosso editor de texto também não sabe - o que prejudica o *IntelliSense*.
 
-Com o **Typescript**, o nosso editor se torna "inteligente", pois ele consegue saber exatamente os dados que o projeto pode ter e oferecer, informação que será fornecida previamente por nós, por meio da **tipagem dos dados**.
+Com o **Typescript**, o nosso editor se torna "inteligente", pois ele terá acesso à informação dos dados os quais o projeto pode ter e oferecer, informação que será fornecida previamente por nós, por meio da **tipagem dos dados**.
 
 ### Vantagens
 
@@ -20,6 +23,22 @@ Com o **Typescript**, o nosso editor se torna "inteligente", pois ele consegue s
 - Diminui a produtividade inicialmente, pois o Typescript adiciona novas restrições ao código, gerando maior propensão a erros e um maior tempo para se acostumar;
 - O Typescript não substitui o Javascript por completo;
 - Quem é iniciante terá dificuldade, caso não tenha familiaridade com linguagens tipadas;
+
+## Recursos
+O recurso mais importante do TypeScript são os tipos. 
+
+Você pode definir, por exemplo, qual será o tipo de uma variável, dos parâmetros ou retorno de uma função. Os principais são:
+
+- any
+- string
+- number
+- boolean
+
+Para arrays, temos duas formas:
+```javascript
+names: string[], // um array apenas de strings
+names: Array<string | number> // um array de mais de um tipo de dados
+```
 
 # Node
 
