@@ -45,3 +45,11 @@ let cart: object;
 cart = {
   key: 'value',
 };
+
+// Type Inference
+let message2 = "initial message";
+message2 = "new message";
+
+window.addEventListener("click", e => {
+  console.log(e.target);
+});
