@@ -1,4 +1,4 @@
-class UserAccount {
+abstract class UserAccount {
   name: string;
   age: number;
 
@@ -16,6 +16,15 @@ class CharAccount extends UserAccount {
   nickname: string;
   level: number;
 
+  get getLevel() {
+    return this.level;
+  }
+
+  set setLevel(level: number) {
+    console.log('----LEVEL UP!----');
+    this.level = level;
+  }
+
   constructor(name: string, age: number, nickname: string, level: number) {
     super(name, age);
     this.nickname = nickname;
@@ -23,9 +32,7 @@ class CharAccount extends UserAccount {
   }
 }
 
-
-const lu = new UserAccount("luisa", 19);
+const lu = new CharAccount("Luísa", 22, "lully", 149);
+lu.setLevel = 150;
+console.log(lu.getLevel);
 lu.logDetails();
-
-const isa = new CharAccount("isalu", 22, "isoca", 149);
-isa.logDetails();

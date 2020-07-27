@@ -30,9 +30,24 @@ var CharAccount = /** @class */ (function (_super) {
         _this.level = level;
         return _this;
     }
+    Object.defineProperty(CharAccount.prototype, "getLevel", {
+        get: function () {
+            return this.level;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Object.defineProperty(CharAccount.prototype, "setLevel", {
+        set: function (level) {
+            console.log('----LEVEL UP!----');
+            this.level = level;
+        },
+        enumerable: false,
+        configurable: true
+    });
     return CharAccount;
 }(UserAccount));
-var lu = new UserAccount("luisa", 19);
+var lu = new CharAccount("Luísa", 22, "lully", 149);
+lu.setLevel = 150;
+console.log(lu.getLevel);
 lu.logDetails();
-var isa = new CharAccount("isalu", 22, "isoca", 149);
-isa.logDetails();
