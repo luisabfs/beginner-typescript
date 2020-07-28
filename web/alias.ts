@@ -1,5 +1,5 @@
 // Type Alias
-type Uid = number | string | undefined;
+export type Uid = number | string | undefined;
 type Platform = 'Windows' | 'Linux' | 'MacOS';
 
 function logProduct(uid: Uid, item: string) {

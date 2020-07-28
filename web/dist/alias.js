@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 function logProduct(uid, item) {
     console.log("A product with " + uid + " has a title as " + item + ".");
 }
